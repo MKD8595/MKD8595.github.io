@@ -1,14 +1,33 @@
+html {
+	min-height:500px;
+	width:100%;
+	box-sizing:border-box;
+	font-family: 'Oswald';
+	font-size:20px;
+	overflow-y: scroll;
+}
+
 body {
-    background-color: rgb(100, 150, 150);
-  }
-  
-  h1 {
-    color: black;
-    text-align: center;
-    font-size: 30;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
+	min-height:500px;
+	width:100%;
+	box-sizing:inherit;
+	margin:0;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+
+.flex_center {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container_question {
+
+    display:flex;
+    height:100%;
+    width:inherit;
+    background-color:#000000;
+    padding:0 0 0 70%;
+
+}
