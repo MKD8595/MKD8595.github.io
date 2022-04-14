@@ -1,14 +1,19 @@
 let index = 0;
+let previousIndex  = 0;
 
 function generateQuestion() {
 
     //randomise
     index = Math.floor(Math.random() * data.questions.length)
 
+    if (index == previousIndex) {index += 1};
+
     //read data
     document.getElementById("questionBox").innerHTML = data.questions[index].question;
 
     document.getElementById("answerBox").innerHTML = "";
+
+    previousIndex = index;
 
 }
 
@@ -60,6 +65,48 @@ var data = {
 
         {
             "tutorial":"1",
+            "question":"What are some environmental conditions that might adversely affect the engineering properties of plastics?",
+            "answer":"Heat, YV, pH & Mechanial Load"
+        },
+
+        {
+            "tutorial":"1",
+            "question":"Which ceramic materials are currently being used for cutting-tool applications? What features and/or properties make them attractive? ",
+            "answer":"WC, sintered ceramic composites (Al2O3 + SiN), SiC - High melting T (2500+ C) • Good thermal conductivity (100s W/mK) • Low coefficient of thermal expansion (few μm/mK) • Extreme hardness (8-9 on Mohr scale) • E > 500 GPa • Poor electrical resistivity"
+        },
+
+        {
+            "tutorial":"1",
+            "question":"Why do most ceramic materials fail to possess their theoretically high         tensile strength?",
+            "answer":"Presence of defects (bonding- , structural -, etc.)"
+        },
+
+        {
+            "tutorial":"1",
+            "question":"Which metals are noble metals? What properties make them special (i.e.noble)?",
+            "answer":"The list of chemically noble metals comprises • ruthenium • rhodium • palladium • silver • osmium • iridium • platinum • gold"
+        },
+
+        {
+            "tutorial":"1",
+            "question":"Among the following materials: Platinum (Pt), Cadmium (Cd), ultra-pure            Aluminium (Al), Gold (Au), Graphite (C), Magnesium (Mg), Zinc (Zn), Silver (Ag) - which are cathodic and which are anodic? ",
+            "answer":"• Anodic: Mg, Al, Zn • Cathodic: the rest in the list"
+        },
+
+        {
+            "tutorial":"1",
+            "question":"At what operating conditions discontinuous chip formation is observed? ",
+            "answer":"High tool feed rate • High depth of cut"
+        },
+
+        {
+            "tutorial":"1",
+            "question":"Is electrochemical machining suitable to process polymers?",
+            "answer":"Not suitable as polymers are (in their majority) electrically nonconductive"
+        },
+
+        {
+            "tutorial":"1",
             "question":"",
             "answer":""
         },
@@ -71,10 +118,9 @@ var data = {
         },
 
         {
-            "tutorial":"",
+            "tutorial":"1",
             "question":"",
             "answer":""
         }
-
     ]
 }
