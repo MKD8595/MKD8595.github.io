@@ -16,6 +16,17 @@ body {
 	box-sizing:border-box;
 }
 
+p {
+	color:white;
+	font-size:16px;
+	margin:0;
+}
+
+h1{
+	font-size:4vw;
+	color:white;
+	margin:0;
+}
 .flex_center {
 	display:flex;
 	justify-content: center;
