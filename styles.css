@@ -27,22 +27,22 @@ h1{
 	font-size:4vw;
 	color:black;
 	margin:0;
-    align-items: center;
+    text-align: center;
 }
 
-.flex_center {
+.flex_container {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-    width: 80%;
+    width: 90%;
+    height: 90%;
+    background-color:cornflowerblue;
 }
 
-.container_question {
+.flex_container > div {
 
-    display:flex;
-    height:100%;
-    width:100%;
-    background-color: rgb(150, 100, 100);
-    padding:10% 0 0 10%;
+    margin: 10px;
+    background-color: darkgray;
+    font-size: 16px;
 
 }
