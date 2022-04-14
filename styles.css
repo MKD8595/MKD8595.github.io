@@ -18,9 +18,9 @@ body {
 }
 
 p {
-	color:white;
+	color:rgb(0, 0, 0);
 	font-size:16px;
-	margin:0;
+	margin:30px;
 }
 
 h1{
@@ -36,13 +36,14 @@ h1{
 	align-items: center;
     width: 90%;
     height: 90%;
-    background-color:cornflowerblue;
+    background-color:rgb(145, 165, 201);
+    flex-direction: column;
 }
 
 .flex_container > div {
 
     margin: 10px;
-    background-color: darkgray;
+    background-color: rgb(219, 217, 217);
     font-size: 16px;
 
 }
