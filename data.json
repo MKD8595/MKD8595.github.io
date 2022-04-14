@@ -1,0 +1,22 @@
+{
+    "questions" : [
+    
+        {
+            "tutorial":"1",
+            "question":"What is Bronze? List alloying elements in bronze and their ratio(s)?",
+            "answer":"Bronze is an alloy consisting primarily of Cu, commonly with about 12% tin(Sn) and, often with the addition of other metals such as aluminium (Al), manganese(Mg), nickel (Ni) or zinc (Zn) and, sometimes non-metals or metalloids such as arsenic (As), phosphorus (P) or silicon (Si)."
+        },
+
+        {
+            "tutorial":"1",
+            "question":"What is Brass (i.e. an alloy consisting of…)? What is the ratio of alloying elements in Brass (if any)?",
+            "answer":"Brass is a metal alloy made of copper (Cu) and zinc (Zn); the proportions of zinc and copper can be varied to create a range of brasses with varying properties. • Alpha brass Cu >65 Zn <35 • Beta brass Cu 55-65 Zn 3-45 • White brass Cu <50 Zn >50 etc. It is a substitutional alloy: atoms of the two constituents may replace each other within the same crystal structure."
+        },
+
+        {
+            "tutorial":"1",
+            "question":"",
+            "answer":""
+        }
+    ]
+}
