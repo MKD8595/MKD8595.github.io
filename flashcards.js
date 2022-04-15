@@ -72,6 +72,41 @@ function handleWeek(buttonID) {
             questionsNumber = 15;
         break;
 
+        case 4:
+            questionsNumber = 0;
+        break;
+
+        case 5:
+            questionsNumber = 0;
+        break;
+
+        case 6:
+            questionsNumber = 0;
+        break;
+
+        case 7:
+            questionsNumber = 0;
+        break;
+
+        case 8:
+            questionsNumber = 0;
+        break;
+
+        case 9:
+            questionsNumber = 0;
+        break;
+
+        case 10:
+            questionsNumber = 0;
+        break;
+
+        case 11:
+            questionsNumber = 0;
+        break;
+
+        case 12:
+            questionsNumber = 0;
+        break;
     }
 
     //create array of integers from 0 to number of questions - 1
