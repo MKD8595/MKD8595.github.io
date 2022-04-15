@@ -17,7 +17,7 @@ function generateQuestion() {
     index = Math.floor(Math.random() * indexArr.length);
 
     //Generate image string
-    document.getElementById("questionImg").src = "img/" + week + "/T" + week + "_Q" + (indexArr[index]) + ".jpg";
+    document.getElementById("questionImg").src = "/img/" + week + "/T" + week + "_Q" + (indexArr[index]) + ".jpg";
 
     //Hide answer
     document.getElementById("answerImg").src = ""
@@ -27,7 +27,7 @@ function generateQuestion() {
 function showAnswer() {
 
     //Generate image string
-    document.getElementById("answerImg").src = "img/" + week + "/T" + week + "_A" + (index + 1) + ".jpg";
+    document.getElementById("answerImg").src = "/img/" + week + "/T" + week + "_A" + (index + 1) + ".jpg";
 
     //Delete index to remove duplicate questions
     indexArr.splice(index, 1);
