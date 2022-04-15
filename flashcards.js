@@ -7,9 +7,16 @@ let indexArr = [];
 
 function generateQuestion() {
 
+    
+    //Button
+    hideButtons(false);
+
+    //hide old Question
+    document.getElementById("questionImg").src = ""
+
     if(indexArr.length == 0) {
 
-        return(console.log("Questions completed"));
+        document.getElementById("counter").innerHTML = "Topic Completed"
 
     }
     
@@ -17,22 +24,28 @@ function generateQuestion() {
     index = Math.floor(Math.random() * indexArr.length);
 
     //Generate image string
-    document.getElementById("questionImg").src = "/img/" + week + "/T" + week + "_Q" + (indexArr[index]) + ".jpg";
+    document.getElementById("questionImg").src = "img/" + week + "/T" + week + "_Q" + (indexArr[index]) + ".jpg";
 
     //Hide answer
-    document.getElementById("answerImg").src = ""
+    document.getElementById("answerImg").src = "";
 
 }
 
 function showAnswer() {
 
+    //Button
+    hideButtons(true);
+
     //Generate image string
-    document.getElementById("answerImg").src = "/img/" + week + "/T" + week + "_A" + (index + 1) + ".jpg";
+    document.getElementById("answerImg").src = "img/" + week + "/T" + week + "_A" + (indexArr[index]) + ".jpg";
 
     //Delete index to remove duplicate questions
     indexArr.splice(index, 1);
+    
+    //show counter
+    document.getElementById("counter").innerHTML = "Questions Left: " + indexArr.length;
 
-    console.log("index Array: " + indexArr);
+    console.log("index Array: " + indexArr.length);
 }
 
 function handleWeek(buttonID) {
@@ -52,7 +65,7 @@ function handleWeek(buttonID) {
         break;
 
         case 2:
-            questionsNumber = 20;
+            questionsNumber = 30;
         break;
 
         case 3:
@@ -68,8 +81,26 @@ function handleWeek(buttonID) {
 
     }
 
+    //show counter
+    document.getElementById("counter").innerHTML = "Questions Left: " + indexArr.length;
+
     //Create question
     generateQuestion();
 
 }
 
+function hideButtons(answerShown) {
+
+    if (answerShown) {
+
+        document.getElementById("nextButton").style.cursor = '';
+        document.getElementById("answerButton").style.cursor = 'not-allowed';
+
+    } else {
+
+        document.getElementById("nextButton").style.cursor = 'not-allowed';
+        document.getElementById("answerButton").style.cursor = '';
+
+    }
+
+}
