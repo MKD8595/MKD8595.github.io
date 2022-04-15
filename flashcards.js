@@ -14,7 +14,7 @@ function generateQuestion() {
     //hide old Question
     document.getElementById("questionImg").src = ""
 
-    if(indexArr.length == 0) {
+    if(indexArr.length <= 1) {
 
         document.getElementById("counter").innerHTML = "Topic Completed"
 
@@ -93,13 +93,15 @@ function hideButtons(answerShown) {
 
     if (answerShown) {
 
-        document.getElementById("nextButton").style.cursor = '';
-        document.getElementById("answerButton").style.cursor = 'not-allowed';
+        document.getElementById("nextButton").disabled = false;
+
+        document.getElementById("answerButton").disabled = true;
 
     } else {
 
-        document.getElementById("nextButton").style.cursor = 'not-allowed';
-        document.getElementById("answerButton").style.cursor = '';
+        document.getElementById("nextButton").disabled = true;
+
+        document.getElementById("answerButton").disabled = false;
 
     }
 

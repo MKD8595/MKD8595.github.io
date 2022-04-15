@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Flashcards v0.1</title>
+        <title>Flashcards</title>
         <link rel="stylesheet" href="styles.css">
         <script src="flashcards.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     </head>
     <body>
 
-        <h1>Big Dick Mick's Shitty Flashcards</h1>
+        <h1>Shitty Flashcards V69.420</h1>
         <div class="flex_containerWeek">
             <button class="button_week" onclick="handleWeek(1)">Material Properties</button>
             <button class="button_week" onclick="handleWeek(2)">Ferrous/Non-Ferrous Alloys</button>
@@ -32,8 +32,8 @@
         </div>
 
         <div class="flex_containerButton">
-            <button id = "answerButton" class="button_custom" onclick="showAnswer()">Show Answer</button>
-            <button id = "nextButton" class="button_custom" onclick="generateQuestion()">Next Question</button>
+            <button id = "answerButton" class="button_custom" onclick="showAnswer()" disabled>Show Answer</button>
+            <button id = "nextButton" class="button_custom" onclick="generateQuestion()" disabled>Next Question</button>
         </div>
 
     </body>
