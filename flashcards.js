@@ -14,7 +14,7 @@ function generateQuestion() {
     //hide old Question
     document.getElementById("questionImg").src = ""
 
-    if(indexArr.length <= 1) {
+    if(indexArr.length < 1) {
 
         document.getElementById("counter").innerHTML = "Topic Completed Tiny Dancer!"
         document.getElementById("questionImg").src = "/img/td" +  Math.floor(Math.random() * 8) + ".jpg";
