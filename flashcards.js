@@ -6,14 +6,7 @@ let filteredData = [];
 let indexArr = [];
 
 function generateQuestion() {
-
-    //Exit on zero questions left
-    if(indexArr.length == 0) {
-        //Button
-        hideButtons(false);
-        return;
-    }
-    
+  
     //Button
     hideButtons(false);
 
