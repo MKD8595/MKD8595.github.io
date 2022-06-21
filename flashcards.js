@@ -81,23 +81,23 @@ function handleWeek(buttonID) {
         break;
 
         case 6:
-            questionsNumber = 0;
+            questionsNumber = 27;
         break;
 
         case 7:
-            questionsNumber = 0;
+            questionsNumber = 14;
         break;
 
         case 8:
-            questionsNumber = 0;
+            questionsNumber = 32;
         break;
 
         case 9:
-            questionsNumber = 0;
+            questionsNumber = 16;
         break;
 
         case 10:
-            questionsNumber = 0;
+            questionsNumber = 24;
         break;
 
     }
