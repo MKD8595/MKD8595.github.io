@@ -12,7 +12,6 @@ body {
 	width:100%;
 	box-sizing:inherit;
 	margin:0;
-	overflow-y: inherit;
 	box-sizing:border-box;
     background-color: lightgray;
 }
@@ -40,7 +39,7 @@ h1{
 .flex_container > div {
 
     margin: 1%;
-    min-height : 150px;
+    min-height : 120px;
     font-size: 32px;
     max-height: 25%;
     align-items: center;
