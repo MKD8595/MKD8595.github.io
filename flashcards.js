@@ -28,13 +28,16 @@ function generateQuestion() {
     //Hide answer
     document.getElementById("answerImg").src = "";
 
+    //Signal end of topic
+    if(indexArr.length == 0) {completed = true};
+
 }
 
 function showAnswer() {
 
     //Exit on zero questions left
     if(completed) {
-        document.getElementById("counter").innerHTML = "Topic Completed - so fuck off"
+        document.getElementById("counter").innerHTML = "Topic Completed - go away now."
         return;
     }
 
@@ -52,8 +55,6 @@ function showAnswer() {
 
     console.log("index Array: " + indexArr.length);
 
-    //Signal end of topic
-    if(indexArr.length == 0) {completed = true};
 }
 
 function handleWeek(buttonID) {
