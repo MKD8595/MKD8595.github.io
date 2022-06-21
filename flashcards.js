@@ -29,7 +29,6 @@ function showAnswer() {
     //Exit on zero questions left
     if(indexArr.length == 0) {
         document.getElementById("counter").innerHTML = "Topic Completed Tiny Dancer!"
-        document.getElementById("questionImg").src = "/img/td" +  Math.floor(Math.random() * 8) + ".jpg";
         return;
     }
 
