@@ -61,7 +61,7 @@ h1{
 
     font-size: 32px;
     max-height: 100%;
-    padding:auto;
+    padding: auto;
     text-align: center;
 
 }
@@ -69,12 +69,11 @@ h1{
 img {
 
     display: block;
-    height: 98%;
-    width: 50%;
     object-fit: contain;
     padding:1%;
-    align-items: center;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 
 }
 
