@@ -14,13 +14,6 @@ function generateQuestion() {
     //hide old Question
     document.getElementById("questionImg").src = ""
 
-    if(indexArr.length < 1) {
-
-        document.getElementById("counter").innerHTML = "Topic Completed Tiny Dancer!"
-        document.getElementById("questionImg").src = "/img/td" +  Math.floor(Math.random() * 8) + ".jpg";
-
-    }
-    
     //Randomise index
     index = Math.floor(Math.random() * indexArr.length);
 
@@ -47,6 +40,14 @@ function showAnswer() {
     document.getElementById("counter").innerHTML = "Questions Left: " + indexArr.length;
 
     console.log("index Array: " + indexArr.length);
+
+    if(indexArr.length < 1) {
+
+        document.getElementById("counter").innerHTML = "Topic Completed Tiny Dancer!"
+        document.getElementById("questionImg").src = "/img/td" +  Math.floor(Math.random() * 8) + ".jpg";
+
+    }
+    
 }
 
 function handleWeek(buttonID) {
