@@ -4,9 +4,15 @@ let previousIndex  = 0;
 let week = '1';
 let filteredData = [];
 let indexArr = [];
+let completed = false;
 
 function generateQuestion() {
-  
+    
+    //Exit on finish
+    if (completed) {
+        return;
+    }
+
     //Button
     hideButtons(false);
 
@@ -27,8 +33,8 @@ function generateQuestion() {
 function showAnswer() {
 
     //Exit on zero questions left
-    if(indexArr.length == 0) {
-        document.getElementById("counter").innerHTML = "Topic Completed Tiny Dancer!"
+    if(completed) {
+        document.getElementById("counter").innerHTML = "Topic Completed - so fuck off"
         return;
     }
 
@@ -45,9 +51,15 @@ function showAnswer() {
     document.getElementById("counter").innerHTML = "Questions Left: " + (indexArr.length);
 
     console.log("index Array: " + indexArr.length);
+
+    //Signal end of topic
+    if(indexArr.length == 0) {completed = true};
 }
 
 function handleWeek(buttonID) {
+
+    //Restart
+    completed = false;
 
     //convert 1 to '1'
     week = buttonID + ""; 
