@@ -35,34 +35,45 @@ h1{
     width: 100%;
     background-color:rgb(255, 255, 255);
     flex-direction: column;
+    height:350px;
 }
+
+.flex_container_thin {
+	display:flex;
+	align-items: center;
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    flex-direction: column;
+    padding: 5px;
+}
+
 .flex_container > div {
 
-    margin: 1%;
-    height : 400px;
+    height : 350px;
     font-size: 32px;
-    max-height: 25%;
+    max-height: 100%;
     align-items: center;
     justify-content: center;
 
 }
 
-.flex_container > p {
+.flex_container_thin > p {
 
     font-size: 32px;
-    max-height: 7.5%
-    
+    max-height: 100%;
+    padding:auto;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.flex_container > img {
+.flex_container > div > img {
 
     display: block;
-    max-height: 100%;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    height: 98%;
+    width: 98%;
     object-fit: contain;
-
+    padding:1%;
 }
 
 .flex_containerWeek {
