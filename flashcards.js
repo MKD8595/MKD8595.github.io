@@ -7,19 +7,18 @@ let indexArr = [];
 
 function generateQuestion() {
 
+    //Exit on zero questions left
+    if(indexArr.length == 0) {
+        //Button
+        hideButtons(false);
+        return;
+    }
     
     //Button
     hideButtons(false);
 
     //hide old Question
     document.getElementById("questionImg").src = ""
-
-    if(indexArr.length == 0) {
-
-        document.getElementById("counter").innerHTML = "Topic Completed Tiny Dancer!"
-        document.getElementById("questionImg").src = "/img/td" +  Math.floor(Math.random() * 8) + ".jpg";
-
-    }
     
     //Randomise index
     index = Math.floor(Math.random() * indexArr.length);
@@ -34,6 +33,13 @@ function generateQuestion() {
 
 function showAnswer() {
 
+    //Exit on zero questions left
+    if(indexArr.length == 0) {
+        document.getElementById("counter").innerHTML = "Topic Completed Tiny Dancer!"
+        document.getElementById("questionImg").src = "/img/td" +  Math.floor(Math.random() * 8) + ".jpg";
+        return;
+    }
+
     //Button
     hideButtons(true);
 
@@ -44,9 +50,8 @@ function showAnswer() {
     indexArr.splice(index, 1);
     
     //show counter
-    if(indexArr.length > 0) {
-        document.getElementById("counter").innerHTML = "Questions Left: " + (indexArr.length);
-    }
+    document.getElementById("counter").innerHTML = "Questions Left: " + (indexArr.length);
+
     console.log("index Array: " + indexArr.length);
 }
 
