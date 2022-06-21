@@ -28,8 +28,10 @@ function generateQuestion() {
     //Hide answer
     document.getElementById("answerImg").src = "";
 
-    //Signal end of topic
-    if(indexArr.length == 0) {completed = true};
+    //show counter
+    document.getElementById("counter").innerHTML = "Questions Left: " + (indexArr.length);
+
+    console.log("index Array: " + indexArr.length);
 
 }
 
@@ -37,7 +39,6 @@ function showAnswer() {
 
     //Exit on zero questions left
     if(completed) {
-        document.getElementById("counter").innerHTML = "Topic Completed - go away now."
         return;
     }
 
@@ -49,12 +50,14 @@ function showAnswer() {
 
     //Delete index to remove duplicate questions
     indexArr.splice(index, 1);
+
     
-    //show counter
-    document.getElementById("counter").innerHTML = "Questions Left: " + (indexArr.length);
-
-    console.log("index Array: " + indexArr.length);
-
+    //Signal end of topic
+    if(indexArr.length == 0) {
+        completed = true;
+        document.getElementById("counter").innerHTML = "Topic Completed - go away now."
+        return;
+    }l
 }
 
 function handleWeek(buttonID) {
