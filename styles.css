@@ -39,7 +39,7 @@ h1{
 .flex_container > div {
 
     margin: 1%;
-    min-height : 120px;
+    height : 400px;
     font-size: 32px;
     max-height: 25%;
     align-items: center;
