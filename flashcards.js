@@ -23,7 +23,7 @@ function generateQuestion() {
     //index = Math.floor(Math.random() * indexArr.length);
     
     //Dont randomise
-    index = indexArr.length;
+    index = indexArr.length - 1;
     
     //Generate image string
     document.getElementById("questionImg").src = "/img/" + week + "/T" + week + "_Q" + (indexArr[index]) + ".jpg";
